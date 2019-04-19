@@ -1,12 +1,14 @@
+<!doctype html>
 <html>
-<header>
-    <title> SMS App</title>
+
+<head>
+    <title>SMS App</title>
     <link rel="stylesheet" href="css/style.css">
-</header>
+</head>
 
 <body>
     <div>
-        <h2> SMS App</h2>
+        <h2>SMS App</h2>
         <div>
             <h4>Authenticate using your account information</h4>
             <div>
@@ -47,18 +49,16 @@
                             <input type="text" id="sms-number-from" />
                         </li>
                     </ul>
-                    <!-- Create the Login button with the action. -->
-                    <p>
-                        <button type="button" onclick="loginByPasswordGrant()" id="loginByPwdBtn">Login</button> </p>
+                    <button type="button" onclick="loginByPasswordGrant()" id="loginByPwdBtn">Login</button>
                 </div>
                 <div id="clientCredID">
                     <ul>
                         <li>
-                            <label>Project Private Key:</label>
+                            <label>Private project key:</label>
                             <input type="text" id="privateKey" />
                         </li>
                         <li>
-                            <label>Project Private Secret:</label>
+                            <label>Private project secret:</label>
                             <input type="text" id="privateSecret" />
                         </li>
                     </ul>
@@ -68,22 +68,20 @@
         </div>
         <div>
             <h4>Subscribe to Chat Service on Websocket Channel</h4>
-            <p><input type="button" value="Subscribe" onclick="subscribe();" /></p>
+            <p><input type="button" value="Subscribe" onclick="subscribe()" /></p>
         </div>
         <div>
             <h4>Conversations</h4>
             <ul>
                 <li>
                     <b>Step 1:</b>
-                        <label>Enter their contact information:</label>
-                        <input type="text" id="convo-participant" class="long" 
-                            placeholder="Full user ID or phone number (in E164 format)" 
-                            title="e.g.,&#13;&bull; User ID: janedoe@somedomain.com&#13;   ([userId]@[domain])&#13;&bull; Phone Number: +12223334444&#13;   (+[countryCode][areaCode][subscriberNumber])" />
+                    <label>Enter their contact information:</label>
+                    <input type="text" id="convo-participant" class="long" placeholder="Full user ID or phone number (in E164 format)" title="e.g.,&#13;&bull; User ID: janedoe@somedomain.com&#13;   ([userId]@[domain])&#13;&bull; Phone Number: +12223334444&#13;   (+[countryCode][areaCode][subscriberNumber])" />
                 </li>
                 <li>
                     <b>Step 2:</b>
-                        <label>Create!</label>
-                        <input type="button" value="Create" onclick="createConvo();" />
+                    <label>Create!</label>
+                    <button type="button" onclick="createConvo()">Create</button>
                 </li>
             </ul>
         </div>
@@ -93,7 +91,7 @@
             <p>
                 <b>Message to conversation:</b>
                 <input type="text" placeholder="Type your message here" id="message-text" class="long" />
-                <input type="button" value="Send" onclick="sendMessage();" />
+                <button type="button" onclick="sendMessage()">Send</button>
             </p>
         </div>
         <div class="terminal-wrapper">

@@ -24,3 +24,18 @@ This app is used to create communication channel between two users via SMS APIs.
 10. Click on "Create" button to create the conversation between both the users.
 11. Enter the text message into the user1's Message box and Click on Send button.
 12. open the user2's browser window and check the message box, if message received than type a message into the user2's message box and click on send button.
+
+### Development
+
+To setup the project repository, run these commands
+
+```
+git clone https://github.com/hclsampleapps/kandy-cpaas2-sample-sms.git
+cd kandy-cpaas2-sample-sms
+```
+
+Then, open ```index.html``` in the browser to view the app.
+
+#### Branching strategy
+
+To learn about the branching strategy, contribution & coding conventions followed in the project, please refer [GitFlow based branching strategy for your project repository](https://gist.github.com/ribbon-abku/10d3fc1cff5c35a2df401196678e258a)
