@@ -4,35 +4,34 @@
 
 This app is used to create communication channel between two users via SMS APIs.
 
- - [Try it now](https://hclsampleapps.github.io/kandy-cpaas2-sample-sms/app/) at playground
+ - Try the [demo](https://hclsampleapps.github.io/kandy-cpaas2-sample-sms/app/)
  - Get the [source code](https://github.com/hclsampleapps/kandy-cpaas2-sample-sms)
 
 #### User manual 
 
 1. Create an account on **AT&T** portal via [Register now for a free account](https://apimarket.att.com/signup).
-2. Open `index.html` in the browser.
+2. Open 2 instances of `index.html` in the browser for *User1* and *User2*.
 3. Enter the *server URL*, for e.g.,
-	- For AT&T API Marketplace [apimarket.att.com](https://apimarket.att.com), enter *https://oauth-cpaas.att.com*
+	- For AT&T API Marketplace [apimarket.att.com](https://apimarket.att.com), enter `https://oauth-cpaas.att.com`
 4. Choose to get accessToken by *Password Grant* flow or *Client Credentials* flow.
-5. For **Password Grant** flow, enter 
+5. Login using two different users' credentials in both the browser windows.
+6. For **Password Grant** flow, enter 
 	- *clientId* 
 	- *emailId* 
 	- *password*  
 	- *phone number*
-6. For **Client Credentials Grant** flow, enter
+7. For **Client Credentials Grant** flow, enter
 	- *privateKey*
 	- *privateSecret*   
-7. Click ***Login***
-8. Open two instances of `index.html` in the browser for *user1* and *user2*.
-9. Login using two different user's credentials in both the browser windows.
-10. After successful login you will get an *accessToken* for user1 and user2, that you can use to send/receive SMS between both the users.
-11. Click ***Subscribe*** button in both the browser windows to create the webrtc channel.
-12. Enter the user2's *User ID* or *Phone Number* into the user1's browser window ***Create Conversation*** box; e.g.,
+8. Click ***Login***
+9. After successful login you will get an *accessToken* for *User1* and *User2*, that you can use to send/receive SMS between both the users.
+10. Click ***Subscribe*** button in both the browser windows to create the webrtc channel.
+11. Enter the *User2*'s *User ID* or *Phone Number* into the *User1*'s browser window under ***Conversation*** section; e.g.,
 	- User ID: *janedoe@somedomain.com ([userId]@[domain])*, or
 	- Phone Number: *+12223334444 (+[countryCode][areaCode][subscriberNumber])*
-10. Click on ***Create*** button to create the conversation between both the users.
-11. Enter the text message into the user1's *Message* box and Click on ***Send*** button.
-12. Open the user2's browser window and check the *Message* box, if message received than type a message into the user2's *Message* box and click on ***Send*** button.
+12. Click on ***Create*** button to create the conversation between both the users.
+13. Enter the text message into the *User1*'s ***Message*** input field and Click on ***Send*** button.
+14. Open the *User2*'s browser window and check the ***Message*** input field, if message received than type a message into the *User2*'s ***Message*** input field and click on ***Send*** button.
 
 ##### Notes
 
