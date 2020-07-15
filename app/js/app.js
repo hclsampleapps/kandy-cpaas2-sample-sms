@@ -90,7 +90,7 @@ function initClient() {
 
         // If we don't have a current conversation, assign the new one and render it.
         if (!currentConvo && convos.length !== 0) {
-            currentConvo = client.conversation.get(convos[0].destination, { type: convos[0].type })
+            currentConvo = client.conversation.get(convos.destination[0], { type: convos.type })
             renderLatestMessage(currentConvo)
         }
     })
